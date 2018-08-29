@@ -34,10 +34,13 @@ ZEND_DECLARE_MODULE_GLOBALS(yangmiyuwo)
 /* True global resources - no need for thread safety here */
 static int le_yangmiyuwo;
 
+<<<<<<< HEAD
 ZEND_BEGIN_ARG_INFO(arginfo_maiev,0)
 	ZEND_ARG_INFO(0,scale)
 ZEND_END_ARG_INFO()
 
+=======
+>>>>>>> 082fd2ea121ad885a75e76a32b2375033d759d43
 /* {{{ PHP_INI
  */
 /* Remove comments and fill if you need to have entries in php.ini
@@ -47,6 +50,7 @@ PHP_INI_BEGIN()
 PHP_INI_END()
 */
 /* }}} */
+<<<<<<< HEAD
 PHP_FUNCTION(maiev)
 {
 	zend_long new_scale;
@@ -56,6 +60,8 @@ PHP_FUNCTION(maiev)
 
 	RETVAL_LONG(new_scale);
 }
+=======
+>>>>>>> 082fd2ea121ad885a75e76a32b2375033d759d43
 
 /* Remove the following function when you have successfully modified config.m4
    so that your module can be compiled into PHP, it exists only for testing
@@ -152,7 +158,10 @@ PHP_MINFO_FUNCTION(yangmiyuwo)
 	DISPLAY_INI_ENTRIES();
 	*/
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 082fd2ea121ad885a75e76a32b2375033d759d43
 /* }}} */
 
 /* {{{ yangmiyuwo_functions[]
@@ -161,12 +170,18 @@ PHP_MINFO_FUNCTION(yangmiyuwo)
  */
 const zend_function_entry yangmiyuwo_functions[] = {
 	PHP_FE(confirm_yangmiyuwo_compiled,	NULL)		/* For testing, remove later. */
+<<<<<<< HEAD
 	PHP_FE(maiev,	arginfo_maiev)		/* For testing, remove later. */
+=======
+>>>>>>> 082fd2ea121ad885a75e76a32b2375033d759d43
 	PHP_FE_END	/* Must be the last line in yangmiyuwo_functions[] */
 };
 /* }}} */
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 082fd2ea121ad885a75e76a32b2375033d759d43
 /* {{{ yangmiyuwo_module_entry
  */
 zend_module_entry yangmiyuwo_module_entry = {
